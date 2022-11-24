@@ -12,4 +12,15 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+fn main() {
+    is_big(101)
+}
+
+fn is_big(x: i32) {
+    let lt_100 = x > 100;
+
+    match lt_100 {
+        true => println!("The number is more than 100"),
+        false => println!("The number is less or iqual than 100")
+    }
+}
